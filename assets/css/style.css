@@ -265,6 +265,11 @@ body.nav-active{overflow: hidden;}
   margin-block-start: 5px;
 }
 
+.section-text{
+  font-size: var(--fontSize-body-4);
+  line-height: var(--lineHeight-3);
+}
+
 .btn{
   position: relative;
   color: var(--gold-crayola);
@@ -326,8 +331,71 @@ body.nav-active{overflow: hidden;}
 .has-after::after{
   content: "";
   position: absolute;
-
 }
+
+.section {
+  position: relative;
+  padding-block: var(--section-space);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.bg-black-10 { background-color: var(--smoky-black-2);}
+
+.grid-list {
+  display: grid;
+  gap: 40px;
+}
+
+.hover-shine {position: relative;}
+
+.hover-shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-image: linear-gradient(to right, transparent 0%, #fff6 100%);
+  transform: skew(-0.08turn) translateX(-180%);
+}
+
+.hover-shine:is(:hover, :focus-within)::after {
+  transform: skewX(-0.08turn) translateX(275%);
+  transition: var(--transition-3);
+}
+
+.img-holder {
+  min-width: 200px;
+  width: 330px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: var(--eerie-black-4);
+}
+
+.btn-text {
+  color: var(--gold-crayola);
+  padding-block-end: 4px;
+  margin-inline: auto;
+  text-transform: uppercase;
+  letter-spacing: var(--letterSpacing-3);
+  font-weight: var(--weight-bold);
+  transition: var(--transition-1);
+}
+
+.btn-text:is(:hover, :focus-visible) { color: var(--white);}
+
+.shape {
+  display: none;
+  position: absolute;
+  max-width: max-content;
+  z-index: -1;
+}
+
+.w-100 { width: 100%;}
+
+
 
 /*-----------------------------------*\
   #PRELOAD
@@ -699,7 +767,44 @@ body.nav-active{overflow: hidden;}
   #SERVICE
 \*-----------------------------------*/
 
+.service .section-title { margin-block-end: 16px;}
 
+.service .section-text { margin-block-end: 40px;}
+
+.service-card { overflow: hidden;}
+
+.service-card .has-before {
+  padding-block: 30px;
+  margin-block-end: 26px;
+  z-index: 1;
+}
+
+.service-card .has-before::before {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 100%;
+  background-image: url("../images/img-pattern.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  transition: var(--transition-2);
+  transition-delay: 0;
+  z-index: -1;
+  will-change: transform;
+}
+
+.service-card:is(:hover, :focus-within) .has-before::before {
+  transform: rotateY(0.5turn) translateX(50%);
+  transition-delay: 300ms;
+}
+
+.service-card .card-banner {transition: var(--transition-2);}
+
+.service-card:is(:hover, :focus-within) .card-banner { transform: scale(1.05);}
+
+.service .card-title{ margin-block-end: 12px;}
 
 
 
@@ -707,8 +812,59 @@ body.nav-active{overflow: hidden;}
   #ABOUT
 \*-----------------------------------*/
 
+.about .section-text { margin-block: 15px 30px;}
 
+.about .btn {
+  margin-inline: auto;
+  margin-block-start: 26px;
+}
 
+.about .container {
+  display: grid;
+  gap: 120px;
+}
+
+.about-banner {
+  position: relative;
+  margin-block-end: 120px;
+}
+
+.about-banner > .w-100 { padding-inline-start: 50px;}
+
+.about .abs-img { position: absolute;}
+
+.about .abs-img::before { z-index: -1;}
+
+.about .abs-img-1 {
+  bottom: -120px;
+  left: 0;
+  width: 150px;
+  padding-block: 50px;
+}
+
+.about .abs-img-2 {
+  top: -65px;
+  right: 0;
+  overflow: hidden;
+}
+
+.about .abs-img-1::before {
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  background-image: url("../images/img-pattern.svg");
+  background-repeat: repeat;
+}
+
+.about .abs-img-2::before {
+  inset: 0;
+  background-image: url("../images/badge-2-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: rotate360 15s linear infinite;
+}
 
 
 /*-----------------------------------*\

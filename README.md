@@ -50,7 +50,24 @@ Every update pushed to GitHub is automatically deployed through Vercel.
 
 ## 📸 Screenshots
 
-(Add screenshots here)
+### Desktop Version
+
+<p align="center">
+  <img src="./screenshots/destkop-1-home.png" width="23%">
+  <img src="./screenshots/destkop-2-menu.png" width="23%">
+  <img src="./screenshots/destkop-3-booking.png" width="23%">
+  <img src="./screenshots/destkop-4-event.png" width="23%">
+</p>
+
+
+### Mobile Version
+
+<p align="center">
+  <img src="./screenshots/mobile-1-home.png" width="23%">
+  <img src="./screenshots/mobile-2-menu.png" width="23%">
+  <img src="./screenshots/mobile-3-booking.png" width="23%">
+  <img src="./screenshots/mobile-4-navbar.png" width="23%">
+</p>
 
 ## 👨‍💻 Author
 

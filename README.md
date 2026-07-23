@@ -1,4 +1,7 @@
 # Grill Restaurant Website
+
+A modern and responsive one-page restaurant website built with HTML, CSS and JavaScript.
+
 ![Grill Restaurant Preview](./screenshots/destkop-1-home.png)
 
 A modern and responsive one-page restaurant website designed for a grill restaurant. 

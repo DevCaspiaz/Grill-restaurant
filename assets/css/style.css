@@ -216,6 +216,10 @@ body.nav-active{overflow: hidden;}
   margin-inline: auto;
 }
 
+.md-font {
+  font-size: var(--fontSize-label-1);
+}
+
 .hover-underline{
   position: relative;
   max-width: max-content;

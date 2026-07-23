@@ -1431,14 +1431,6 @@ textarea.input-field {
     margin-inline: auto;
   }
 
-  /*! .service-card .has-before::before {
-    width: 250px;
-  } */
-
-  /*! .service .grid-list {
-    width: 100%;
-  } */
-
 
   /* 
   *About
@@ -1454,9 +1446,7 @@ textarea.input-field {
   /* 
   *Menu
   */
-  /*! .menu .container .grid-list {
-    width: fit-content;
-  } */
+
   .menu-card .title-wrapper{
     display: flex;
     justify-content: flex-start;

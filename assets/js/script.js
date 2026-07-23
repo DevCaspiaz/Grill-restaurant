@@ -32,6 +32,7 @@ const addEventOnElements = function(elements, eventType, callback){
 const navbar = document.querySelector("[data-navbar]");
 const navTogglers = document.querySelectorAll("[data-nav-toggler]");
 const overlay = document.querySelector("[data-overlay]");
+const navLinks = document.querySelectorAll("[data-nav-link]");
 
 const toggleNavbar = function (){
     navbar.classList.toggle("active");
@@ -39,7 +40,14 @@ const toggleNavbar = function (){
     document.body.classList.toggle("nav-active");
 }
 
+const closeNavbar = function () {
+    navbar.classList.remove("active");
+    overlay.classList.remove("active");
+    document.body.classList.remove("nav-active");
+}
+
 addEventOnElements(navTogglers, "click", toggleNavbar)
+addEventOnElements(navLinks, "click", closeNavbar);
 
 
 //* Header & BACK TOP BTN

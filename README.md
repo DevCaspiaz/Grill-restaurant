@@ -1,4 +1,5 @@
 # Grill Restaurant Website
+![Grill Restaurant Preview](./screenshots/destkop-1-home.png)
 
 A modern and responsive one-page restaurant website designed for a grill restaurant. 
 This project focuses on creating a clean user interface, responsive layout, and smooth user experience across different devices.
